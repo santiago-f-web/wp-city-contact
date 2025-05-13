@@ -197,8 +197,9 @@ observer.observe(document.body, {
 </script>";
 
 
-require_once WP_CITY_CONTACT_PATH . 'includes/github-updater.php';
-new CCM_Github_Updater(__FILE__);
+
 
 
 });
+require_once WP_CITY_CONTACT_PATH . 'includes/github-updater.php';
+new CCM_Github_Updater(__FILE__);
