@@ -3,7 +3,7 @@
  * Plugin Name: City Contact Manager
  * Plugin URI:  https://github.com/santiago-f-web/wp-city-contact
  * Description: Plugin para gestionar contactos telefónicos por ciudad. Asigna números, rastrea formularios y llamadas desde una API externa.
- * Version:     1.0.0
+ * Version:     1.0.1
  * Author:      Santiago Fernández
  * Author URI:  https://github.com/santiago-f-web
  * License:     GPL-2.0+

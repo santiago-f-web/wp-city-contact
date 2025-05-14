@@ -1,7 +1,7 @@
 <?php
 if (!defined('ABSPATH')) exit;
 
-function wp_city_contact_updater_tab() {
+function wp_city_contact_update_tab() {
     $update_available = false;
     $plugin_slug = 'city-contact-manager/wp-city-contact.php'; // Cambia si el path del plugin cambia
     // Se actualizo
