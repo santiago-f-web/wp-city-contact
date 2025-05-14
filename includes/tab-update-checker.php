@@ -1,10 +1,24 @@
 <?php
 if (!defined('ABSPATH')) exit;
+if (!function_exists('get_plugin_data')) {
+    require_once ABSPATH . 'wp-admin/includes/plugin.php';
+}
 
 function wp_city_contact_update_tab() {
     $update_available = false;
     $plugin_slug = 'city-contact-manager/wp-city-contact.php'; // Cambia si el path del plugin cambia
     // Se actualizo
+
+        $plugin_data = get_plugin_data(WP_PLUGIN_DIR . '/wp-city-contact/wp-city-contact.php');
+    $current_version = $plugin_data['Version'];
+    ?>
+    <div class="wrap">
+        <h2>Actualización del plugin</h2>
+        <p><strong>Versión actual instalada:</strong> <?php echo esc_html($current_version); ?></p>
+        <!-- Aquí podés mostrar si hay nueva versión, etc. -->
+    </div>
+    <?php
+}
     // Forzar chequeo si el usuario lo solicitó
     if (isset($_POST['ccm_check_update']) && check_admin_referer('ccm_check_update_action', 'ccm_nonce')) {
         wp_clean_plugins_cache(true);
