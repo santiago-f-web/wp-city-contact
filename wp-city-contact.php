@@ -3,7 +3,7 @@
  * Plugin Name: City Contact Manager
  * Plugin URI:  https://example.com
  * Description: Plugin para gestionar contactos según ciudad.
- * Version:     1.0.3
+ * Version:     1.0.0
  * Author:      Tu Nombre
  * License:     GPL-2.0+
  */
